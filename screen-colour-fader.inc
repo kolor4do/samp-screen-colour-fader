@@ -96,7 +96,7 @@ stock StopPlayerScreenColourFade(playerid) {
         return 0;
     }
 
-    TextDrawShowForPlayer(playerid, ScreenColourTD);
+    TextDrawHideForPlayer(playerid, ScreenColourTD);
     _KillScreenColourFadeTimer(playerid);
     return 1;
 }
